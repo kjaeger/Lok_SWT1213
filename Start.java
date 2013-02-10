@@ -2,7 +2,7 @@ import java.util.Date;
 
 import lok.Gueterwaggon;
 import lok.Kippwaggon;
-import lok.Lokomotive;
+import lok.Lokomotive;		// Hier nicht Diesel, weil hier ja die Lokomotive.java gemeint ist, nicht die Klasse
 import lok.Personenwaggon;
 import lok.Viehwaggon;
 
@@ -14,7 +14,7 @@ public class Start {
 	 */
 	public static void main(String[] args) {
 
-		Lokomotive lok = new Lokomotive(8000);
+		DieselLokomotive lok = new DieselLokomotive(8000);
 		
 		Gueterwaggon g = new Gueterwaggon(2000, 2000); //insg. 4t
 		g.fuegeHinzuGut(1000);
